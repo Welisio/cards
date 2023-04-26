@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cards</title>
+    <style>
+        .price-rate-count,.card-container,.count,.rate,.cards {
+            display: flex;
+        }
+        .card-container {
+            margin-right: 15px;
+            padding: 10px;
+            width: 300px;
+            flex-direction: column;
+            background: #CBE038;
+            border-radius: 10px;
+        }
+        .card-img,.title,.description,.category {
+            margin-bottom: 20px;
+        }
+        .price-rate-count {
+            justify-content: space-between;
+        }
+        .category {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .description {
+            line-height: 25px;
+        }
+        .count > div,.rate > div {
+            margin-right: 5px;
+        }
+        .count,.rate,.price {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .cards {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card-container">
+            <div class="category">Men's clothing</div>
+            <div class="title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</div>
+            <img class="card-img" height="200px" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="">
+            <div class="description">
+                Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday
+            </div>
+            <div class="price-rate-count">
+                <div class="price">109.95$</div>
+                <div class="rate">
+                    <div>3.9</div> 
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="count">
+                    <div>120</div> 
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.6/axios.min.js" integrity="sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="cards.js"></script>
+</body>
+</html>
